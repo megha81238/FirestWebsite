@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>  Scientific calculator</h1>
+<form action="add" method="POST">
+    {%csrf_token%}
+    enter first number:<input type="text" name="num1"><br>
+    enter second number:<input type="text" name="num2"><br>
+    <input type="submit">
+    <input type="button" name="btnAdd" value="add">
+    <input type="button" name="btnSub" value="sub">
+    <input type="button" name="btnMul" value="mul">
+    <input type="button" name="btnDiv" value="div">
+
+
+
+</form>
+
+{% endblock %}
